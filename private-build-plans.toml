@@ -37,7 +37,7 @@ menu = 400
 css = 400
 
 # inspired by
-# https://github.com/be5invis/Iosevka/issues/132#issuecomment-265321017
+# https://github.com/be5invis/Iosevka/issues/132#issuecomment-370163262
 # https://github.com/protesilaos/iosevka-comfy/blob/9850b5320ecb460399bf3d007a95aff18628b13e/private-build-plans.toml#L726
 [buildPlans.IosevkaCustom.widths.Normal]
 shape = 550
