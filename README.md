@@ -1,12 +1,11 @@
-# iosevka
+# IosevkaCustom
 
-My custom iosevka font. Shapes and width similar to [Zed Mono](https://github.com/zed-industries/zed-fonts).
+My custom Iosevka font.
 
-No ligatures, no italics.
-
-Nerd font patched.
-
-All icons with `--complete`.
+- Shapes and width similar to [Zed Mono](https://github.com/zed-industries/zed-fonts).
+- No ligatures, no italics, no bold.
+- Nerd font patched.
+- All icons with `--complete`.
 
 ![](screenshot.png)
 
