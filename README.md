@@ -19,20 +19,19 @@ generate `private-build-plans.toml` at https://typeof.net/Iosevka/customizer
   - https://github.com/shytikov/pragmasevka/blob/main/private-build-plans.toml
   - https://git.sr.ht/~ashton314/iosevka-output/tree/main/item/private-build-plans.toml
 
+Requirements:
+
 ```shell
 brew install ttfautohint fontforge
+mkdir -p vendor && cd vendor
 git clone --depth 1 https://github.com/be5invis/Iosevka.git
 cd Iosevka
-ln -s ~/iosevka/private-build-plans.toml .
 npm install
-npm run build -- contents::IosevkaCustom
 cd ..
 curl -OJNL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
 unzip FontPatcher.zip -d FontPatcher
-cd FontPatcher
-fontforge -script font-patcher --complete ~/personal_projects/vendor/Iosevka/dist/IosevkaCustom/TTF/IosevkaCustom-Regular.ttf
-cp IosevkaCustomNerdFont-Regular.ttf ~/iosevka/
-open ~/iosevka/IosevkaCustomNerdFont-Regular.ttf
+rm FontPatcher.zip
+cd ..
 ```
 
 `./reinstall.sh`
