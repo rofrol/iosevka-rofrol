@@ -35,3 +35,10 @@ cd ..
 ```
 
 `./reinstall.sh`
+
+## Links
+
+- https://lambdaland.org/posts/2022-08-01_a_new_font/
+- https://protesilaos.com/emacs/iosevka-comfy-pictures
+- https://kau.sh/blog/build-iosevka-font-mac-os/
+- https://github.com/NNBnh/dotfiles/wiki/font
