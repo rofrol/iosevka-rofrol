@@ -5,4 +5,4 @@ echo ${DIR}
 cd ${DIR}/vendor/FontPatcher &&
 	fontforge -script font-patcher --complete ${DIR}/ComicShannsMono-Regular.ttf &&
 	cp ComicShannsMonoNerdFont-Regular.ttf ${DIR}/ &&
-	open ${DIR}/ComicShannsMonoNerdFont-Regular.ttf
+	open -a Font\ Book ${DIR}/ComicShannsMonoNerdFont-Regular.ttf
