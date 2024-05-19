@@ -3,6 +3,7 @@
 DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)
 echo ${DIR}
 cd ${DIR}/vendor/FontPatcher &&
+	# from https://github.com/Rodrigodd/comic-shanns-mono/blob/master/fonts/ComicShannsMono-Regular.ttf
 	fontforge -script font-patcher --complete ${DIR}/ComicShannsMono-Regular.ttf &&
 	cp ComicShannsMonoNerdFont-Regular.ttf ${DIR}/ &&
 	open -a Font\ Book ${DIR}/ComicShannsMonoNerdFont-Regular.ttf
