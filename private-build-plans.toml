@@ -2,8 +2,9 @@
 family = "Iosevka Custom"
 spacing = "fixed"
 serifs = "sans"
-noCvSs = true
+noCvSs = false
 exportGlyphNames = true
+noLigation = true
 
   [buildPlans.IosevkaCustom.variants]
   inherits = "ss08"
