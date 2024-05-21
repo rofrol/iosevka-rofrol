@@ -1,18 +1,86 @@
-[buildPlans.IosevkaCustom]
-family = "Iosevka Custom"
+[buildPlans.iosevka-rofrol]
+family = "Iosevka Rofrol"
 spacing = "fixed"
 serifs = "sans"
 noCvSs = false
 exportGlyphNames = true
-noLigation = true
+noLigations = true
 
-  [buildPlans.IosevkaCustom.variants]
+  [buildPlans.iosevka-rofrol.variants]
   inherits = "ss08"
 
-    [buildPlans.IosevkaCustom.variants.design]
+    [buildPlans.iosevka-rofrol.variants.design]
+    capital-a = "straight-serifless"
+    capital-i = "serifed"
+    capital-k = "symmetric-connected-serifless"
+    capital-n = "standard-serifless"
+    capital-r = "straight-serifless"
+    capital-v = "straight-serifless"
+    capital-w = "straight-serifless"
+    capital-x = "straight-serifless"
+    capital-y = "straight-serifless"
+    capital-z = "straight-serifless"
+    g = "double-storey"
+    i = "zshaped"
+    k = "symmetric-connected-serifless"
+    v = "straight-serifless"
+    w = "straight-serifless"
+    x = "straight-serifless"
+    y = "straight-serifless"
+    z = "straight-serifless"
+    zero = "slashed"
+    two = "straight-neck-serifless"
+    four = "closed-serifless"
+    six = "straight-bar"
+    seven = "straight-serifed"
+    eight = "two-circles"
+    nine = "straight-bar"
+    asterisk = "hex-mid"
+    underscore = "above-baseline"
+    caret = "medium"
+    paren = "normal"
+    brace = "curly"
+    number-sign = "slanted"
+    ampersand = "closed"
+    at = "threefold"
+    dollar = "open"
+    percent = "rings-continuous-slash"
+    bar = "force-upright"
+    question = "smooth"
+
+[buildPlans.iosevka-rofrol.weights.Regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.iosevka-rofrol.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.iosevka-rofrol.slopes.Upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.iosevka-rofrol-zed]
+family = "Iosevka Rofrol Zed"
+spacing = "fixed"
+serifs = "sans"
+noCvSs = false
+exportGlyphNames = true
+noLigations = true
+
+  [buildPlans.iosevka-rofrol-zed.variants]
+  inherits = "ss08"
+
+    [buildPlans.iosevka-rofrol-zed.variants.design]
     capital-w = "curly-serifless"
     capital-x = "straight-serifless"
+    f = "serifless"
     g = "double-storey"
+    l = "serifed"
     x = "curly-serifless"
     y = "straight-turn-serifless"
     zero = "slashed"
@@ -27,26 +95,23 @@ noLigation = true
     brace = "curly"
     number-sign = "slanted"
     ampersand = "closed"
+    at = "threefold"
     dollar = "open"
     percent = "rings-continuous-slash"
     bar = "force-upright"
     question = "corner"
 
-[buildPlans.IosevkaCustom.weights.Regular]
+[buildPlans.iosevka-rofrol-zed.weights.Regular]
 shape = 400
 menu = 400
 css = 400
 
-# inspired by
-# https://github.com/be5invis/Iosevka/issues/132#issuecomment-370163262
-# https://github.com/protesilaos/iosevka-comfy/blob/9850b5320ecb460399bf3d007a95aff18628b13e/private-build-plans.toml#L726
-[buildPlans.IosevkaCustom.widths.Normal]
-shape = 550
+[buildPlans.iosevka-rofrol-zed.widths.Normal]
+shape = 600
 menu = 5
 css = "normal"
 
-# needed to not build Oblique and Italic
-[buildPlans.IosevkaCustom.slopes.Upright]
+[buildPlans.iosevka-rofrol-zed.slopes.Upright]
 angle = 0
 shape = "upright"
 menu = "upright"

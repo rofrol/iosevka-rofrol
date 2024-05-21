@@ -1,4 +1,4 @@
-# IosevkaCustom
+# Iosevka Rofrol
 
 My custom Iosevka font.
 
@@ -34,7 +34,9 @@ rm FontPatcher.zip
 cd ..
 ```
 
-`./reinstall.sh`
+`./reinstall_iosevka_rofrol.sh`
+
+`./reinstall_iosevka_rofrol_zed.sh`
 
 ## Links
 
