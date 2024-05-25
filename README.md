@@ -7,17 +7,19 @@ My custom Iosevka font.
 - Nerd font patched.
 - All icons with `--complete`.
 
+> The variant Iosevka Term is designed to better support terminals and the variant Iosevka Fixed omits the ligatures. <https://en.wikipedia.org/wiki/Iosevka>
+
 ![](screenshot.png)
 
 ## Run
 
-generate `private-build-plans.toml` at https://typeof.net/Iosevka/customizer
+generate `private-build-plans.toml` at <https://typeof.net/Iosevka/customizer>
 
-- Overview of stylistic sets https://github.com/be5invis/Iosevka/blob/main/doc/stylistic-sets.md
-  - https://news.ycombinator.com/item?id=36785409
-  - https://github.com/aaronmbos/monocode/blob/main/src/private-build-plans.toml
-  - https://github.com/shytikov/pragmasevka/blob/main/private-build-plans.toml
-  - https://git.sr.ht/~ashton314/iosevka-output/tree/main/item/private-build-plans.toml
+- Overview of stylistic sets <https://github.com/be5invis/Iosevka/blob/main/doc/stylistic-sets.md>
+  - <https://news.ycombinator.com/item?id=36785409>
+  - <https://github.com/aaronmbos/monocode/blob/main/src/private-build-plans.toml>
+  - <https://github.com/shytikov/pragmasevka/blob/main/private-build-plans.toml>
+  - <https://git.sr.ht/~ashton314/iosevka-output/tree/main/item/private-build-plans.toml>
 
 Requirements:
 
@@ -40,7 +42,7 @@ cd ..
 
 ## Links
 
-- https://lambdaland.org/posts/2022-08-01_a_new_font/
-- https://protesilaos.com/emacs/iosevka-comfy-pictures
-- https://kau.sh/blog/build-iosevka-font-mac-os/
-- https://github.com/NNBnh/dotfiles/wiki/font
+- <https://lambdaland.org/posts/2022-08-01_a_new_font/>
+- <https://protesilaos.com/emacs/iosevka-comfy-pictures>
+- <https://kau.sh/blog/build-iosevka-font-mac-os/>
+- <https://github.com/NNBnh/dotfiles/wiki/font>
