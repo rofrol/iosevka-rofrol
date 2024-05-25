@@ -5,8 +5,11 @@ echo ${DIR}
 ln -sf ${DIR}/private-build-plans.toml ${DIR}/vendor/Iosevka/private-build-plans.toml &&
 	cd ${DIR}/vendor/Iosevka &&
 	npm run build -- ttf-unhinted::iosevka-rofrol-zed2 &&
-	# open ${DIR}/vendor/Iosevka/dist/iosevka-rofrol-zed2/TTF-Unhinted/iosevka-rofrol-zed2-Regular.ttf
+	# open ${DIR}/vendor/Iosevka/dist/iosevka-rofrol-zed2/TTF-Unhinted/iosevka-rofrol-zed2-ExtendedMedium.ttf
 	cd ${DIR}/vendor/FontPatcher &&
-	fontforge -script font-patcher --complete ${DIR}/vendor/Iosevka/dist/iosevka-rofrol-zed2/TTF-Unhinted/iosevka-rofrol-zed2-Regular.ttf &&
-	cp IosevkaRofrolZed2NerdFont-Regular.ttf ${DIR}/ &&
-	open -a Font\ Book ${DIR}/IosevkaRofrolZed2NerdFont-Regular.ttf
+	# --makegroups needed to have Postscript name https://github.com/ryanoasis/nerd-fonts/issues/579#issuecomment-1441612101
+	# Postscript name may be needed for kitty when disabling ligatures wiht -liga
+	# https://github.com/kovidgoyal/kitty/issues/2738#issuecomment-854384969
+	fontforge -script font-patcher --makegroups --complete ${DIR}/vendor/Iosevka/dist/iosevka-rofrol-zed2/TTF-Unhinted/iosevka-rofrol-zed2-ExtendedMedium.ttf &&
+	cp IosevkaRofrolZed2NerdFont-MediumExtended.ttf ${DIR}/ &&
+	open -a Font\ Book ${DIR}/IosevkaRofrolZed2NerdFont-MediumExtended.ttf
