@@ -250,6 +250,7 @@ bar = "force-upright"
 question = "corner"
 
 # End variant section
+###################################################################################################
 
 ###################################################################################################
 # Override default building weights
@@ -261,40 +262,10 @@ question = "corner"
 #             plan to use otherwise they will not be built.
 
 
-[buildPlans.iosevka-rofrol-zed2.weights.Thin]
-shape = 100
-menu = 100
-css = 100
-
-[buildPlans.iosevka-rofrol-zed2.weights.ExtraLight]
-shape = 200
-menu = 200
-css = 200
-
-[buildPlans.iosevka-rofrol-zed2.weights.Light]
-shape = 300
-menu  = 300
-css   = 300
-
-[buildPlans.iosevka-rofrol-zed2.weights.SemiLight]
-shape = 350
-menu  = 350
-css   = 350
-
 [buildPlans.iosevka-rofrol-zed2.weights.Regular]
-shape = 400  # Weight for glyph shapes.
-menu  = 400  # Weight for the font's names.
-css   = 400  # Weight for webfont CSS.
-
-[buildPlans.iosevka-rofrol-zed2.weights.Book]
-shape = 450
-menu  = 450  # Use 450 here to name the font's weight "Book"
-css   = 450
-
-[buildPlans.iosevka-rofrol-zed2.weights.Bold]
-shape = 700
-menu  = 700
-css   = 700
+shape = 350  # Weight for glyph shapes.
+menu  = 350  # Weight for the font's names.
+css   = 350  # Weight for webfont CSS.
 
 # End weight section
 ###################################################################################################
@@ -324,6 +295,9 @@ css   = "normal"      # Slope grade used for webfont CSS.      `normal`  | `obli
 #             otherwise they will not be built.
 
 [buildPlans.iosevka-rofrol-zed2.widths.Extended]
-shape = 450
+shape = 600
 menu  = 7
 css   = "expanded"
+
+# End width section
+###################################################################################################
