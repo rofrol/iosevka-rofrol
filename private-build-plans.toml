@@ -1,3 +1,5 @@
+# https://github.com/be5invis/Iosevka/blob/main/private-build-plans.sample.toml
+
 ### See https://github.com/be5invis/Iosevka/blob/master/doc/custom-build.md for comprehensive
 ### documentation of the options in this file
 
@@ -258,10 +260,41 @@ question = "corner"
 #             If you decide to use custom weights you have to define all the weights you
 #             plan to use otherwise they will not be built.
 
-[buildPlans.iosevka-rofrol-zed2.weights.Medium]
-shape = 500
-menu  = 500
-css   = 500
+
+[buildPlans.iosevka-rofrol-zed2.weights.Thin]
+shape = 100
+menu = 100
+css = 100
+
+[buildPlans.iosevka-rofrol-zed2.weights.ExtraLight]
+shape = 200
+menu = 200
+css = 200
+
+[buildPlans.iosevka-rofrol-zed2.weights.Light]
+shape = 300
+menu  = 300
+css   = 300
+
+[buildPlans.iosevka-rofrol-zed2.weights.SemiLight]
+shape = 350
+menu  = 350
+css   = 350
+
+[buildPlans.iosevka-rofrol-zed2.weights.Regular]
+shape = 400  # Weight for glyph shapes.
+menu  = 400  # Weight for the font's names.
+css   = 400  # Weight for webfont CSS.
+
+[buildPlans.iosevka-rofrol-zed2.weights.Book]
+shape = 450
+menu  = 450  # Use 450 here to name the font's weight "Book"
+css   = 450
+
+[buildPlans.iosevka-rofrol-zed2.weights.Bold]
+shape = 700
+menu  = 700
+css   = 700
 
 # End weight section
 ###################################################################################################
@@ -291,6 +324,6 @@ css   = "normal"      # Slope grade used for webfont CSS.      `normal`  | `obli
 #             otherwise they will not be built.
 
 [buildPlans.iosevka-rofrol-zed2.widths.Extended]
-shape = 550
+shape = 450
 menu  = 7
 css   = "expanded"
