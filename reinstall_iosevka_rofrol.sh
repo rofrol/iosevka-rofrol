@@ -5,8 +5,13 @@ echo ${DIR}
 ln -sf ${DIR}/private-build-plans.toml ${DIR}/vendor/Iosevka/private-build-plans.toml &&
 	cd ${DIR}/vendor/Iosevka &&
 	npm run build -- ttf-unhinted::iosevka-rofrol &&
-	# open -a Font\ Book ${DIR}/vendor/Iosevka/dist/iosevka-rofrol/TTF-Unhinted/iosevka-rofrol-Regular.ttf
+	ls ${DIR}/vendor/Iosevka/dist/iosevka-rofrol/TTF-Unhinted/ &&
+	## open ${DIR}/vendor/Iosevka/dist/iosevka-rofrol/TTF-Unhinted/iosevka-rofrol-Regular.ttf
 	cd ${DIR}/vendor/FontPatcher &&
-	fontforge -script font-patcher --complete ${DIR}/vendor/Iosevka/dist/iosevka-rofrol/TTF-Unhinted/iosevka-rofrol-Regular.ttf &&
-	cp IosevkaRofrolNerdFont-Regular.ttf ${DIR}/ &&
-	open -a Font\ Book ${DIR}/IosevkaRofrolNerdFont-Regular.ttf
+	## seems like this makegroups does not work for `kitty +list-fonts --psnames`
+	## --makegroups needed to have Postscript name https://github.com/ryanoasis/nerd-fonts/issues/579#issuecomment-1441612101
+	## Postscript name may be needed for kitty when disabling ligatures wiht -liga
+	## https://github.com/kovidgoyal/kitty/issues/2738#issuecomment-854384969
+	fontforge -script font-patcher --makegroups --complete ${DIR}/vendor/Iosevka/dist/iosevka-rofrol/TTF-Unhinted/iosevka-rofrol-Extended.ttf &&
+	cp IosevkaRofrolNerdFont-Extended.ttf ${DIR}/ &&
+	open -a Font\ Book ${DIR}/IosevkaRofrolNerdFont-Extended.ttf

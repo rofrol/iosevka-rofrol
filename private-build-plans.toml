@@ -3,200 +3,8 @@
 ### See https://github.com/be5invis/Iosevka/blob/master/doc/custom-build.md for comprehensive
 ### documentation of the options in this file
 
-[buildPlans.iosevka-rofrol]
-family = "Iosevka Rofrol"
-spacing = "fixed"
-serifs = "sans"
-noCvSs = false
-exportGlyphNames = true
-noLigations = true
-
-  [buildPlans.iosevka-rofrol.variants]
-  inherits = "ss08"
-
-    [buildPlans.iosevka-rofrol.variants.design]
-    capital-a = "straight-serifless"
-    capital-i = "serifed"
-    capital-k = "symmetric-connected-serifless"
-    capital-n = "standard-serifless"
-    capital-r = "straight-serifless"
-    capital-v = "straight-serifless"
-    capital-w = "straight-serifless"
-    capital-x = "straight-serifless"
-    capital-y = "straight-serifless"
-    capital-z = "straight-serifless"
-    f = "flat-hook-serifless"
-    g = "double-storey"
-    i = "serifed-flat-tailed"
-    j = "flat-hook-serifed"
-    k = "symmetric-connected-serifless"
-    l = "serifed-flat-tailed"
-    t = "flat-hook"
-    v = "straight-serifless"
-    w = "straight-serifless"
-    x = "straight-serifless"
-    y = "straight-turn-serifless"
-    z = "straight-serifless"
-    zero = "slashed"
-    two = "straight-neck-serifless"
-    four = "closed-serifless"
-    six = "straight-bar"
-    seven = "straight-serifed"
-    eight = "two-circles"
-    nine = "straight-bar"
-    asterisk = "hex-mid"
-    underscore = "above-baseline"
-    caret = "medium"
-    paren = "normal"
-    brace = "curly"
-    number-sign = "slanted"
-    ampersand = "closed"
-    at = "threefold"
-    dollar = "open"
-    percent = "rings-continuous-slash"
-    bar = "force-upright"
-    question = "smooth"
-
-[buildPlans.iosevka-rofrol.weights.Regular]
-shape = 400
-menu = 400
-css = 400
-
-[buildPlans.iosevka-rofrol.widths.Normal]
-shape = 600
-menu = 5
-css = "normal"
-
-[buildPlans.iosevka-rofrol.slopes.Upright]
-angle = 0
-shape = "upright"
-menu = "upright"
-css = "normal"
-
-[buildPlans.iosevka-rofrol-zed]
-family = "Iosevka Rofrol Zed"
-spacing = "fixed"
-serifs = "sans"
-noCvSs = false
-exportGlyphNames = true
-noLigations = true
-
-  [buildPlans.iosevka-rofrol-zed.variants]
-  inherits = "ss08"
-
-    [buildPlans.iosevka-rofrol-zed.variants.design]
-    capital-w = "curly-serifless"
-    capital-x = "straight-serifless"
-    f = "serifless"
-    g = "double-storey"
-    l = "serifed"
-    x = "curly-serifless"
-    y = "straight-turn-serifless"
-    zero = "slashed"
-    four = "semi-open-serifless"
-    seven = "straight-serifed"
-    eight = "two-circles"
-    nine = "straight-bar"
-    asterisk = "penta-high"
-    underscore = "above-baseline"
-    caret = "medium"
-    paren = "normal"
-    brace = "curly"
-    number-sign = "slanted"
-    ampersand = "closed"
-    at = "threefold"
-    dollar = "open"
-    percent = "rings-continuous-slash"
-    bar = "force-upright"
-    question = "corner"
-
-[buildPlans.iosevka-rofrol-zed.weights.Regular]
-shape = 400
-menu = 400
-css = 400
-
-[buildPlans.iosevka-rofrol-zed.widths.Normal]
-shape = 600
-menu = 5
-css = "normal"
-
-[buildPlans.iosevka-rofrol-zed.slopes.Upright]
-angle = 0
-shape = "upright"
-menu = "upright"
-css = "normal"
-
-[buildPlans.iosevka-rofrol-curled]
-family = "Iosevka Rofrol Curled"
-spacing = "fixed"
-serifs = "sans"
-noCvSs = false
-exportGlyphNames = true
-noLigations = true
-
-  [buildPlans.iosevka-rofrol-curled.variants]
-  inherits = "ss08"
-
-    [buildPlans.iosevka-rofrol-curled.variants.design]
-    capital-a = "straight-serifless"
-    capital-i = "serifed"
-    capital-k = "symmetric-connected-serifless"
-    capital-n = "standard-serifless"
-    capital-r = "straight-serifless"
-    capital-v = "straight-serifless"
-    capital-w = "straight-serifless"
-    capital-x = "straight-serifless"
-    capital-y = "straight-serifless"
-    capital-z = "straight-serifless"
-    f = "serifless"
-    g = "double-storey"
-    i = "tailed-serifed"
-    j = "serifed"
-    k = "symmetric-connected-serifless"
-    l = "tailed-serifed"
-    v = "straight-serifless"
-    w = "straight-serifless"
-    x = "straight-serifless"
-    y = "straight-serifless"
-    z = "straight-serifless"
-    zero = "slashed"
-    two = "straight-neck-serifless"
-    four = "closed-serifless"
-    six = "straight-bar"
-    seven = "straight-serifed"
-    eight = "two-circles"
-    nine = "straight-bar"
-    asterisk = "hex-mid"
-    underscore = "above-baseline"
-    caret = "medium"
-    paren = "normal"
-    brace = "curly"
-    number-sign = "slanted"
-    ampersand = "closed"
-    at = "threefold"
-    dollar = "open"
-    percent = "rings-continuous-slash"
-    bar = "force-upright"
-    question = "smooth"
-
-[buildPlans.iosevka-rofrol-curled.weights.Regular]
-shape = 400
-menu = 400
-css = 400
-
-[buildPlans.iosevka-rofrol-curled.widths.Normal]
-shape = 600
-menu = 5
-css = "normal"
-
-[buildPlans.iosevka-rofrol-curled.slopes.Upright]
-angle = 0
-shape = "upright"
-menu = "upright"
-css = "normal"
-
-[buildPlans.iosevka-rofrol-zed2]      # <iosevka-rofrol-zed2> is your plan name
-family = "Iosevka Rofrol Zed2"        # Font menu family name
+[buildPlans.iosevka-rofrol]      # <iosevka-rofrol> is your plan name
+family = "Iosevka Rofrol"        # Font menu family name
 spacing = "fixed"               # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
 serifs = "sans"                  # Optional; Values: `sans` or `slab`
 exportGlyphNames = false       # Set this to true for ligature support in Kitty (increased file size)
@@ -205,11 +13,11 @@ exportGlyphNames = false       # Set this to true for ligature support in Kitty 
 # Configure variants
 
 # Optional; Whether to inherit a `ss##` variant
-[buildPlans.iosevka-rofrol-zed2.variants]
+[buildPlans.iosevka-rofrol.variants]
 inherits = "ss08"
 
 # Optional; Configure single character's variant
-[buildPlans.iosevka-rofrol-zed2.variants.design]
+[buildPlans.iosevka-rofrol.variants.design]
 capital-a = "straight-serifless"
 capital-i = "serifed"
 capital-k = "symmetric-connected-serifless"
@@ -249,6 +57,32 @@ percent = "rings-continuous-slash"
 bar = "force-upright"
 question = "corner"
 
+# [buildPlans.iosevka-rofrol-zed.variants.design]
+# capital-w = "curly-serifless"
+# capital-x = "straight-serifless"
+# f = "serifless"
+# g = "double-storey"
+# l = "serifed"
+# x = "curly-serifless"
+# y = "straight-turn-serifless"
+# zero = "slashed"
+# four = "semi-open-serifless"
+# seven = "straight-serifed"
+# eight = "two-circles"
+# nine = "straight-bar"
+# asterisk = "penta-high"
+# underscore = "above-baseline"
+# caret = "medium"
+# paren = "normal"
+# brace = "curly"
+# number-sign = "slanted"
+# ampersand = "closed"
+# at = "threefold"
+# dollar = "open"
+# percent = "rings-continuous-slash"
+# bar = "force-upright"
+# question = "corner"
+
 # End variant section
 ###################################################################################################
 
@@ -263,13 +97,13 @@ question = "corner"
 
 
 # For vscode
-[buildPlans.iosevka-rofrol-zed2.weights.SemiLight]
+[buildPlans.iosevka-rofrol.weights.SemiLight]
 shape = 350  # Weight for glyph shapes.
 menu  = 350  # Weight for the font's names.
 css   = 350  # Weight for webfont CSS.
 
 # For kitty
-[buildPlans.iosevka-rofrol-zed2.weights.Regular]
+[buildPlans.iosevka-rofrol.weights.Regular]
 shape = 450  # Weight for glyph shapes.
 menu  = 450  # Weight for the font's names.
 css   = 450  # Weight for webfont CSS.
@@ -281,7 +115,7 @@ css   = 450  # Weight for webfont CSS.
 # Override default building slope sets
 # When this section is absent, all slopes would be built.
 
-[buildPlans.iosevka-rofrol-zed2.slopes.Upright]
+[buildPlans.iosevka-rofrol.slopes.Upright]
 angle = 0             # Angle in degrees. Valid range [0, 15]
 shape = "upright"     # Slope grade used for shape selection.  `upright` | `oblique` | `italic`
 menu  = "upright"     # Slope grade used for naming.           `upright` | `oblique` | `italic`
@@ -301,7 +135,7 @@ css   = "normal"      # Slope grade used for webfont CSS.      `normal`  | `obli
 #             If you decide to use custom widths you have to define all the widths you plan to use,
 #             otherwise they will not be built.
 
-[buildPlans.iosevka-rofrol-zed2.widths.Extended]
+[buildPlans.iosevka-rofrol.widths.Extended]
 shape = 600
 menu  = 7
 css   = "expanded"
