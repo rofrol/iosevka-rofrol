@@ -6,12 +6,14 @@ ln -sf ${DIR}/private-build-plans.toml ${DIR}/vendor/Iosevka/private-build-plans
 	cd ${DIR}/vendor/Iosevka &&
 	npm run build -- ttf-unhinted::iosevka-rofrol &&
 	ls ${DIR}/vendor/Iosevka/dist/iosevka-rofrol/TTF-Unhinted/ &&
-	## open ${DIR}/vendor/Iosevka/dist/iosevka-rofrol/TTF-Unhinted/iosevka-rofrol-Regular.ttf
-	cd ${DIR}/vendor/FontPatcher &&
-	## seems like this makegroups does not work for `kitty +list-fonts --psnames`
-	## --makegroups needed to have Postscript name https://github.com/ryanoasis/nerd-fonts/issues/579#issuecomment-1441612101
-	## Postscript name may be needed for kitty when disabling ligatures wiht -liga
-	## https://github.com/kovidgoyal/kitty/issues/2738#issuecomment-854384969
-	fontforge -script font-patcher --makegroups --complete ${DIR}/vendor/Iosevka/dist/iosevka-rofrol/TTF-Unhinted/iosevka-rofrol-Extended.ttf &&
-	cp IosevkaRofrolNerdFont-Extended.ttf ${DIR}/ &&
-	open -a Font\ Book ${DIR}/IosevkaRofrolNerdFont-Extended.ttf
+	## open ${DIR}/vendor/Iosevka/dist/iosevka-rofrol/TTF-Unhinted/iosevka-rofrol-BookExtended.ttf
+	cp ${DIR}/vendor/Iosevka/dist/iosevka-rofrol/TTF-Unhinted/iosevka-rofrol-ExtendedBook.ttf ${DIR}/ &&
+	cp ${DIR}/vendor/Iosevka/dist/iosevka-rofrol/TTF-Unhinted/iosevka-rofrol-ExtendedSemiLight.ttf ${DIR}/
+# cd ${DIR}/vendor/FontPatcher &&
+## seems like this makegroups does not work for `kitty +list-fonts --psnames`
+## --makegroups needed to have Postscript name https://github.com/ryanoasis/nerd-fonts/issues/579#issuecomment-1441612101
+## Postscript name may be needed for kitty when disabling ligatures wiht -liga
+## https://github.com/kovidgoyal/kitty/issues/2738#issuecomment-854384969
+# fontforge -script font-patcher --makegroups --complete ${DIR}/vendor/Iosevka/dist/iosevka-rofrol/TTF-Unhinted/iosevka-rofrol-Extended.ttf &&
+# cp IosevkaRofrolNerdFont-Extended.ttf ${DIR}/ &&
+# open -a Font\ Book ${DIR}/IosevkaRofrolNerdFont-Extended.ttf

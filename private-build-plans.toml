@@ -103,7 +103,7 @@ menu  = 350  # Weight for the font's names.
 css   = 350  # Weight for webfont CSS.
 
 # For kitty
-[buildPlans.iosevka-rofrol.weights.Regular]
+[buildPlans.iosevka-rofrol.weights.Book]
 shape = 450  # Weight for glyph shapes.
 menu  = 450  # Weight for the font's names.
 css   = 450  # Weight for webfont CSS.
