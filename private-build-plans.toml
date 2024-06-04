@@ -55,7 +55,7 @@ at = "threefold"
 dollar = "open"
 percent = "rings-continuous-slash"
 bar = "force-upright"
-question = "corner"
+question = "smooth"
 
 # [buildPlans.iosevka-rofrol-zed.variants.design]
 # capital-w = "curly-serifless"
