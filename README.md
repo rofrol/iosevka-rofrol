@@ -1,19 +1,24 @@
 # Iosevka Rofrol
 
-My custom Iosevka font.
+My customization of <https://github.com/Iosevka-Mayukai/Iosevka-Mayukai> font.
 
-- Shapes and width similar to [Zed Mono](https://github.com/zed-industries/zed-fonts).
 - No ligatures, no italics, no bold.
-- Nerd font patched.
+- Nerd font patched. Needed for vscode. Otherwise you can fallback to <https://github.com/ryanoasis/nerd-fonts/releases/latest/download/NerdFontsSymbolsOnly.tar.xz>.
 - All icons with `--complete`.
+- Book for terminal, SemiLight for vscode
 
 > The variant Iosevka Term is designed to better support terminals and the variant Iosevka Fixed omits the ligatures. <https://en.wikipedia.org/wiki/Iosevka>
 
 ![](screenshot.png)
 
+## Other fonts
+
+- <https://github.com/saumyajyoti/MiosevkaNerdFont>
+- <https://github.com/protesilaos/aporetic>
+
 ## Run
 
-generate `private-build-plans.toml` at <https://typeof.net/Iosevka/customizer>
+I have generated `private-build-plans.toml` at <https://typeof.net/Iosevka/customizer>
 
 - Overview of stylistic sets <https://github.com/be5invis/Iosevka/blob/main/doc/stylistic-sets.md>
   - <https://news.ycombinator.com/item?id=36785409>
@@ -24,7 +29,7 @@ generate `private-build-plans.toml` at <https://typeof.net/Iosevka/customizer>
 Requirements:
 
 ```shell
-brew install ttfautohint fontforge
+brew install ttfautohint fontforge python-setuptools
 mkdir -p vendor && cd vendor
 git clone --depth 1 https://github.com/be5invis/Iosevka.git
 cd Iosevka
@@ -36,9 +41,11 @@ rm FontPatcher.zip
 cd ..
 ```
 
-`./reinstall_iosevka_rofrol.sh`
+`./reinstall-mayukai-serif-term.sh`
 
-`./reinstall_iosevka_rofrol_zed.sh`
+or
+
+`watchexec -e toml,sh -c -r ./reinstall-mayukai-serif-term.sh`
 
 ## Links
 

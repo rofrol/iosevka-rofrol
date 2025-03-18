@@ -1,0 +1,132 @@
+# https://github.com/be5invis/Iosevka/blob/main/private-build-plans.sample.toml
+
+### See https://github.com/be5invis/Iosevka/blob/master/doc/custom-build.md for comprehensive
+### documentation of the options in this file
+
+# https://github.com/Iosevka-Mayukai/Iosevka-Mayukai
+# https://github.com/Iosevka-Mayukai/HowToBuild/blob/master/iosevka-v19/private-build-plan-mayukai-original-term.toml
+
+[buildPlans.iosevka-mayukai-serif]      # <iosevka-custom> is your plan name
+family = "Iosevka Mayukai Serif"        # Font menu family name
+spacing = "term"               # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
+serifs = "sans"                  # Optional; Values: `sans` or `slab`
+webfont-formats = ['woff2']
+
+[buildPlans.iosevka-mayukai-serif.variants]
+inherits = "ss09"
+
+# Optional; Configure single character's variant
+[buildPlans.iosevka-mayukai-serif.variants.design]
+capital-a = "straight-serifless"
+capital-b = "more-asymmetric-serifless"
+capital-c = "serifless"
+capital-d = "more-rounded-serifless"
+capital-g = "toothless-corner-serifless-hooked"
+capital-k = "symmetric-connected-serifless"
+capital-u = "toothless-rounded-serifless"
+a = "double-storey-toothless-corner"
+b = "toothless-corner-serifless"
+c = "serifless"
+d = "toothless-corner-serifless"
+e = "flat-crossbar"
+f = "flat-hook-serifless"
+g = "single-storey-earless-corner"
+h = "straight-serifless"
+i = "serifed-flat-tailed"
+j = "serifed"
+k = "symmetric-connected-serifless"
+l = "serifed-flat-tailed"
+m = "earless-rounded-double-arch-short-leg-serifless"
+n = "earless-corner-straight-serifless"
+p = "earless-corner-serifless"
+q = "earless-corner-straight-serifless"
+r = "earless-corner-serifless"
+s = "serifless"
+t = "bent-hook"
+u = "toothless-rounded-serifless"
+v = "straight-serifless"
+w = "straight-serifless"
+x = "straight-serifless"
+y = "straight-turn-serifless"
+z = "straight-serifless"
+zero = "oval-reverse-slashed"
+one = "base-long-top-serif"
+two = "curly-neck-serifless"
+three = "flat-top-serifless"
+four = "semi-open-non-crossing-serifless"
+five = "upright-arched-serifless"
+six = "open-contour"
+seven = "bend-serifless"
+eight = "two-circles"
+nine = "open-contour"
+asterisk = "penta-low"
+brace = "curly-flat-boundary"
+cent = "open"
+dollar = "open"
+number-sign = "upright-tall"
+paren = "large-contour"
+percent = "rings-continuous-slash"
+underscore = "high"
+punctuation-dot = "round"
+at = "threefold-tall"
+digit-form = "lining"
+
+# End variant section
+###################################################################################################
+
+###################################################################################################
+# Override default building weights
+# When buildPlans.<plan name>.weights is absent, all weights would built and mapped to
+# default values.
+# IMPORTANT : Currently "menu" and "css" property only support numbers between 0 and 1000.
+#             and "shape" properly only supports number between 100 and 900 (inclusive).
+#             If you decide to use custom weights you have to define all the weights you
+#             plan to use otherwise they will not be built.
+
+
+# For vscode
+[buildPlans.iosevka-mayukai-serif.weights.SemiLight]
+shape = 350  # Weight for glyph shapes.
+menu  = 350  # Weight for the font's names.
+css   = 350  # Weight for webfont CSS.
+
+# For kitty
+[buildPlans.iosevka-mayukai-serif.weights.Book]
+shape = 450  # Weight for glyph shapes.
+menu  = 450  # Weight for the font's names.
+css   = 450  # Weight for webfont CSS.
+
+# End weight section
+###################################################################################################
+
+###################################################################################################
+# Override default building slope sets
+# When this section is absent, all slopes would be built.
+
+[buildPlans.iosevka-mayukai-serif.slopes.Upright]
+angle = 0             # Angle in degrees. Valid range [0, 15]
+shape = "upright"     # Slope grade used for shape selection.  `upright` | `oblique` | `italic`
+menu  = "upright"     # Slope grade used for naming.           `upright` | `oblique` | `italic`
+css   = "normal"      # Slope grade used for webfont CSS.      `normal`  | `oblique` | `italic`
+
+# End slope section
+###################################################################################################
+
+###################################################################################################
+# Override default building widths
+# When buildPlans.<plan name>.widths is absent, all widths would built and mapped to
+# default values.
+# IMPORTANT : Currently "shape" property only supports numbers between 434 and 664 (inclusive),
+#             while "menu" only supports integers between 1 and 9 (inclusive).
+#             The "shape" parameter specifies the unit width, measured in 1/1000 em. The glyphs'
+#             width are equal to, or a simple multiple of the unit width.
+#             If you decide to use custom widths you have to define all the widths you plan to use,
+#             otherwise they will not be built.
+
+[buildPlans.iosevka-mayukai-serif.widths.Extended]
+shape = 600
+menu  = 7
+css   = "expanded"
+
+# End width section
+###################################################################################################
