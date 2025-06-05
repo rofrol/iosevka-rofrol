@@ -18,7 +18,7 @@ inherits = "ss09"
 [buildPlans.iosevka-source-code-pro.metricOverride]
 cap = 670 # default 735, Height of H.
 ascender = 710 # default 735, Height of b.
-xHeight = 500 # default 520, Height of x.
+xHeight = 480 # default 520, Height of x.
 leading = 1260
 sb = 80 # (varies, 60 for Regular) Width of common side-bearings. https://www.typedesignclass.com/resources/spacing-and-kerning-basics
 # sb = 'default_sb * 1.0625 + 15'
