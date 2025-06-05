@@ -7,6 +7,6 @@ cd ${DIR}/vendor/FontPatcher &&
   ## --makegroups needed to have Postscript name https://github.com/ryanoasis/nerd-fonts/issues/579#issuecomment-1441612101
   ## Postscript name may be needed for kitty when disabling ligatures wiht -liga
   ## https://github.com/kovidgoyal/kitty/issues/2738#issuecomment-854384969
-  # fontforge -script font-patcher --makegroups --complete ${DIR}/SourceCodePro-Regular.ttf &&
+  fontforge -script font-patcher --makegroups --complete ${DIR}/SourceCodePro-Regular.ttf &&
   cp SauceCodeProNerdFont-Regular.ttf ${DIR}/ &&
   open -a Font\ Book ${DIR}/SauceCodeProNerdFont-Regular.ttf

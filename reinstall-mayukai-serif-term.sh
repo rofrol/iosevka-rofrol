@@ -15,7 +15,6 @@ cd ${DIR}/vendor/FontPatcher &&
   ## Postscript name may be needed for kitty when disabling ligatures wiht -liga
   ## https://github.com/kovidgoyal/kitty/issues/2738#issuecomment-854384969
   fontforge -script font-patcher --makegroups --complete ${DIR}/vendor/Iosevka/dist/iosevka-mayukai-serif/TTF-Unhinted/iosevka-mayukai-serif-ExtendedBook.ttf &&
-  fontforge -script font-patcher --makegroups --complete ${DIR}/vendor/Iosevka/dist/iosevka-mayukai-serif/TTF-Unhinted/iosevka-mayukai-serif-ExtendedSemiLight.ttf &&
   cp IosevkaMayukaiSerifNerdFont-Extended.ttf ${DIR}/ &&
   open -a Font\ Book ${DIR}/IosevkaMayukaiSerifNerdFont-Extended.ttf &&
   fontforge -script font-patcher --makegroups --complete ${DIR}/vendor/Iosevka/dist/iosevka-mayukai-serif/TTF-Unhinted/iosevka-mayukai-serif-ExtendedSemiLight.ttf &&
